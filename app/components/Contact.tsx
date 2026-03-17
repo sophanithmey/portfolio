@@ -125,9 +125,9 @@ export default function Contact() {
           </p>
 
           <div className="flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+            <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
             <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-text-muted">
-              Not Open to work
+              Open to work
             </span>
           </div>
         </div>

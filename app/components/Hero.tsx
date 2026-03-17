@@ -26,9 +26,9 @@ export default function Hero() {
         animate="visible"
         className="flex items-center gap-3 mb-16 md:mb-24"
       >
-        <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+        <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
         <span className="font-mono text-xs tracking-[0.3em] uppercase text-muted-4">
-          Not Available for work — {new Date().getFullYear()}
+          Available for work — {new Date().getFullYear()}
         </span>
       </motion.div>
 

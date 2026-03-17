@@ -1,13 +1,19 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { projects } from '../utils/constant';
-import { FadeUp, Stagger, StaggerItem } from './AnimationWrapper';
+import { motion } from "framer-motion";
+import { projects } from "../utils/constant";
+import { FadeUp, Stagger, StaggerItem } from "./AnimationWrapper";
 
 function ArrowIcon() {
   return (
     <svg className="w-5 h-5" viewBox="0 0 20 20" fill="none">
-      <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M4 10H16M16 10L11 5M16 10L11 15"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -15,15 +21,23 @@ function ArrowIcon() {
 function ExternalIcon() {
   return (
     <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
-      <path d="M5 3H3C2.447 3 2 3.447 2 4V13C2 13.553 2.447 14 3 14H12C12.553 14 13 13.553 13 13V11M9 2H14M14 2V7M14 2L7 9" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M5 3H3C2.447 3 2 3.447 2 4V13C2 13.553 2.447 14 3 14H12C12.553 14 13 13.553 13 13V11M9 2H14M14 2V7M14 2L7 9"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
 
 export default function Work() {
   return (
-    <section id="work" className="py-24 md:py-36 px-6 md:px-12 max-w-6xl mx-auto">
-
+    <section
+      id="work"
+      className="py-24 md:py-36 px-6 md:px-12 max-w-6xl mx-auto"
+    >
       {/* Section header */}
       <div className="flex items-end justify-between mb-16 md:mb-24">
         <div>
@@ -38,7 +52,7 @@ export default function Work() {
         </div>
         <FadeUp delay={0.12}>
           <a
-            href="https://github.com/sophanithmey?tab=repositories"
+            href="https://github.com/msophanith?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 text-xs font-mono tracking-widest uppercase text-text-muted hover:text-gold transition-colors duration-300"
@@ -55,13 +69,15 @@ export default function Work() {
             <motion.div
               className="project-card group"
               whileHover={{ x: 4 }}
-              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
               <div className="relative z-10">
                 <div className="flex flex-col md:flex-row md:items-start justify-between gap-6 mb-6">
                   {/* Left */}
                   <div className="flex items-start gap-6">
-                    <span className="font-mono text-xs text-text-dim pt-1.5 shrink-0">{project.index}</span>
+                    <span className="font-mono text-xs text-text-dim pt-1.5 shrink-0">
+                      {project.index}
+                    </span>
                     <div>
                       <div className="flex items-center gap-3 mb-1">
                         <h3 className="font-display text-xl md:text-2xl text-white group-hover:text-gold transition-colors duration-300">
@@ -73,13 +89,17 @@ export default function Work() {
                           </span>
                         )}
                       </div>
-                      <p className="text-xs font-mono tracking-wider text-text-muted">{project.category}</p>
+                      <p className="text-xs font-mono tracking-wider text-text-muted">
+                        {project.category}
+                      </p>
                     </div>
                   </div>
 
                   {/* Year + Arrow */}
                   <div className="flex items-center gap-4 md:pt-1 pl-12 md:pl-0">
-                    <span className="font-mono text-xs text-text-dim">{project.year}</span>
+                    <span className="font-mono text-xs text-text-dim">
+                      {project.year}
+                    </span>
                     <a
                       href={project.link}
                       className="flex items-center justify-center w-9 h-9 border border-border-mid text-text-muted group-hover:border-gold group-hover:text-gold transition-all duration-300"
@@ -97,7 +117,9 @@ export default function Work() {
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <span key={tag} className="skill-pill">{tag}</span>
+                      <span key={tag} className="skill-pill">
+                        {tag}
+                      </span>
                     ))}
                   </div>
                 </div>

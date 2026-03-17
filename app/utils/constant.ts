@@ -32,6 +32,39 @@ const projects = [
     link: "https://alertmenow.vercel.app/map",
     featured: false,
   },
+  {
+    index: "04",
+    title: "Air Quality Monitor",
+    category: "Web App · Next.js",
+    year: "2026",
+    description:
+      "An interactive map application that monitors air quality in real time, helping people stay informed about the air quality in their area.",
+    tags: ["Next.js", "Tailwind", "Leaflet"],
+    link: "https://alertmenow.vercel.app/air-quality",
+    featured: false,
+  },
+  {
+    index: "05",
+    title: "Water Seller",
+    category: "Web App · Next.js",
+    year: "2026",
+    description:
+      "An ecommerce web application that sells water in Cambodia. You can order water and get it delivered to your doorstep.",
+    tags: ["Next.js", "Tailwind"],
+    link: "https://alertmenow.vercel.app/water",
+    featured: false,
+  },
+  {
+    index: "06",
+    title: "Product Scanner",
+    category: "Full-Stack · Next.js · Firebase",
+    year: "2026",
+    description:
+      "An Scanner web application that scans products and provides information about the product. You can also add products price to the database.",
+    tags: ["Next.js", "Tailwind", "Firebase"],
+    link: "https://alertmenow.vercel.app/scanner",
+    featured: true,
+  },
 ];
 
 const skillGroups = [
