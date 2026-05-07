@@ -29,7 +29,7 @@ const projects = [
     description:
       "A comprehensive stock control system for managing car inventory. Built with Next.js and Supabase, it provides real-time updates and efficient inventory tracking.",
     tags: ["Next.js", "Supabase", "Tailwind"],
-    link: "https://meanleapstock.vercel.app/",
+    link: "#",
     featured: false,
   },
   {
